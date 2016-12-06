@@ -1,10 +1,10 @@
 var express = require('express');
-var app = express();
+var router = express.Router();
 
-app.get('/', function(req, res) {
-  res.send('Hello World');
+router.get('/', function(req, res) {
+  // build/delegateBuild of react webpage
+  // send results as html to client on req
+  res.send('Welcome to Gotham');
 });
 
-app.listen(3000, function() {
-  console.log('Express Server listening on port 3000');
-});
+module.exports = router;
