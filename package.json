@@ -4,7 +4,8 @@
   "description": "Minimum viable product.",
   "main": "index.js",
   "scripts": {
-    "build": "babel client --out-dir compiled"
+    "build": "babel client --out-dir compiled",
+    "bundle": "browserify compiled/index.js -o bundle.js"
   },
   "repository": {
     "type": "git",
