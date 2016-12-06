@@ -2,11 +2,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
   }
-  getPage() {
-    this.props.getQuote();
-  }
+
   render() {
     return (<div>Hey</div>);
   }

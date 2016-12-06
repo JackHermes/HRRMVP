@@ -6,6 +6,6 @@
 // assign value to variable
 // place variable below?
 ReactDOM.render(
-  <App getQuote={getQuote}/>,
+  <div>{window.getQuote}</div>,
   document.getElementById('root')
 );
