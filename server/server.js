@@ -4,6 +4,6 @@ var app = express();
 
 app.use('/', router);
 // app.use('/*', router);
-app.listen(8080, function() {
-  console.log('Express Server listening on port 8080');
+app.listen(3000, function() {
+  console.log('Express Server listening on port 3000');
 });
