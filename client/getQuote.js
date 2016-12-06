@@ -1,5 +1,5 @@
 var getQuote = () => {
-  $().get("127.0.0.1:3000", function(res) {
+  $.get("http://127.0.0.1:3000", function(res) {
     document.write(res);
     return res;
   });
