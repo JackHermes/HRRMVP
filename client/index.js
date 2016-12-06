@@ -3,7 +3,7 @@
 
 ReactDOM.render(
   <div>
-  <h1>hello everyone hi i want to succeed with MVP and I wish that you all love</h1>
+  <h1>Hello everyone hi i want to succeed with mvp and i wish that you all love yourself indeed, thanks.</h1>
   <h2>3 person pep talk Andrew^2 and Alonzo</h2></div>,
   document.getElementById('root')
 );
