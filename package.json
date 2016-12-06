@@ -4,7 +4,7 @@
   "description": "Minimum viable product.",
   "main": "index.js",
   "scripts": {
-    "build:watch": "babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch"
+    "build": "babel client --out-dir compiled"
   },
   "repository": {
     "type": "git",
