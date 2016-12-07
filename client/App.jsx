@@ -18,7 +18,35 @@ class App extends React.Component {
       textAlign: "left",
       paddingLeft: "5%"
     };
-
+    var quotes = [
+      {
+        sifu: 'Uncle Iroh',
+        q: 'It is important to draw wisdom from different places. If you take it from only one place it become rigid and stale.'
+      },
+      {
+        sifu: 'Avatar Aang',
+        q: 'When we hit our lowest point, we are open to our greatest change.'
+      },
+      {
+        sifu: "Tre",
+        q: "Backbone is kind of like one of the old Create Your Own Adventure books, except when you pick the wrong way you just end up in some dark corner of the woods with your flashlight battery going out."
+      },
+      {
+        sifu: "Andrew^2 + Alonzo",
+        q: "Hello everyone hi i want to succeed with mvp and i wish that you all love yourself indeed, thanks."
+      },
+      {
+        sifu: "Neville",
+        q: "[*Robin introduces a Hermoine module*] that's the module that actually does all the work"
+      }
+    ];
+    var randomizer = function () {
+      var obj = quotes[Math.floor(Math.random() * quotes.length)];
+      return `
+      ${obj.q}
+      -${obj.sifu}
+      `;
+    }
     // var obj = this.props.getQuote();
     // console.log(obj);
     // const style = div {
@@ -27,7 +55,7 @@ class App extends React.Component {
     // };
     //style={style}
     return (
-      <div style={letterStyle}>When we hit our lowest point, we are open to our greatest change.</div>
+      <div style={letterStyle}>{randomizer()}</div>
     );
   }
 }
