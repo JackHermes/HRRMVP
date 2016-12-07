@@ -18,15 +18,30 @@ class App extends React.Component {
       textAlign: "left",
       paddingLeft: "5%"
     };
+
+    var obj = this.props.getQuote();
+    // console.log(obj);
     // const style = div {
     //   color: maroon;
     //   background-color: green;
     // };
     //style={style}
     return (
-      <div style={letterStyle}>{this.props.getQuote()}</div>
+      <div style={letterStyle}>
+        {
+          function(){
+            var returned;
+            $.get("http://127.0.0.1:3000", function(res) {
+              // document.write(res);
+              console.log("res: ",res);
+              returned = res;
+
+            })
+            setTimeout(function() {console.log("timeout", returned);}, 5000)
+          };
+        }
+    </div>
     );
-  }
 }
 
 window.App = App;
