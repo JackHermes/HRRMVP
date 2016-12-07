@@ -24,7 +24,7 @@ class App extends React.Component {
     // };
     //style={style}
     return (
-      <div style={letterStyle}>Hey everyone hows</div>
+      <div style={letterStyle}>{this.props.getQuote()}</div>
     );
   }
 }
