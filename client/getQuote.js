@@ -5,4 +5,4 @@ var getQuote = () => {
   });
 };
 
-window.getQuote = getQuote();
+window.getQuote = getQuote;
