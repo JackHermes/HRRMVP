@@ -7,13 +7,16 @@ class App extends React.Component {
 
     var letterStyle = {
       padding: 10,
-      margin: 10,
+      marginLeft: "auto",
+      marginRight: "auto",
+      verticalAlign: "bottom",
       backgroundColor: "#ffde00",
       color: "#333",
-      display: "inline-block",
+      display: "block",
       fontFamily: "monospace",
       fontSize: "32",
-      textAlign: "center"
+      textAlign: "left",
+      paddingLeft: "5%"
     };
     // const style = div {
     //   color: maroon;
@@ -21,7 +24,7 @@ class App extends React.Component {
     // };
     //style={style}
     return (
-      <div style={letterStyle}>Hey everyone</div>
+      <div style={letterStyle}>Hey everyone hows</div>
     );
   }
 }
