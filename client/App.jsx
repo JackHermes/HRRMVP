@@ -19,7 +19,7 @@ class App extends React.Component {
       paddingLeft: "5%"
     };
 
-    var obj = this.props.getQuote();
+    // var obj = this.props.getQuote();
     // console.log(obj);
     // const style = div {
     //   color: maroon;
@@ -27,23 +27,10 @@ class App extends React.Component {
     // };
     //style={style}
     return (
-      <div style={letterStyle}>
-        {
-          function(){
-            var returned;
-            $.get("http://127.0.0.1:3000", function(res) {
-              // document.write(res);
-              console.log("res: ",res);
-              returned = res;
-
-            })
-            setTimeout(function() {console.log("timeout", returned);}, 5000)
-          };
-        }
-    </div>
+      <div style={letterStyle}>When we hit our lowest point, we are open to our greatest change.</div>
     );
+  }
 }
-
 window.App = App;
 /* <div>
 <h1>Hello everyone hi i want to succeed with mvp and i wish that you all love yourself indeed, thanks.</h1>
