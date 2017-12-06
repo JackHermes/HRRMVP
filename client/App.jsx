@@ -38,6 +38,10 @@ class App extends React.Component {
       {
         sifu: "Neville",
         q: "[*Robin introduces a Hermoine module*] that's the module that actually does all the work"
+      },
+      {
+        sifu: "New",
+        q: "So much new I can do."
       }
     ];
     var randomizer = function () {
